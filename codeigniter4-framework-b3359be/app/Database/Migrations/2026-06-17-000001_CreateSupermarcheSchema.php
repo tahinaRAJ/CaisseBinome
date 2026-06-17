@@ -26,7 +26,7 @@ class CreateSupermarcheSchema extends Migration
             ],
             'mdp' => [
                 'type'       => 'VARCHAR',
-                'constraint' => 20,
+                'constraint' => 255,
                 'null'       => true,
             ],
             'role' => [
