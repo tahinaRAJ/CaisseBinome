@@ -5,8 +5,23 @@
 
 <div class="mb-3">
     <h4>Saisie des achats</h4>
-    <small class="text-muted">Caisse N°<?= session('caisse')['numero'] ?> — ticket en cours</small>
+    <small class="text-muted">
+        Caisse N°<?= esc($caisse['numero']) ?> —
+        Ticket <?= esc($ticket ?? 'en cours') ?>
+    </small>
 </div>
+
+<?php if (! empty($error)) : ?>
+    <div class="alert alert-danger" role="alert">
+        <?= esc($error) ?>
+    </div>
+<?php endif; ?>
+
+<?php if (! empty($message)) : ?>
+    <div class="alert alert-success" role="alert">
+        <?= esc($message) ?>
+    </div>
+<?php endif; ?>
 
 <!-- Formulaire d'ajout -->
 <div class="card mb-4">
@@ -20,7 +35,9 @@
                         <option value="">-- Choisir --</option>
                         <?php foreach ($produits as $p) : ?>
                             <option value="<?= $p['id'] ?>">
-                                <?= esc($p['designation']) ?> (<?= number_format($p['prix'], 0, ',', ' ') ?> Ar)
+                                <?= esc($p['designation']) ?> -
+                                <?= number_format((float) $p['prix'], 0, ',', ' ') ?> Ar
+                                (stock: <?= (int) $p['quantite_stock'] ?>)
                             </option>
                         <?php endforeach; ?>
                     </select>
@@ -54,30 +71,36 @@
             </thead>
             <tbody>
                 <?php $total = 0; ?>
-                <?php foreach ($achats as $a) : ?>
-                    <?php $total += $a['montant_total']; ?>
+                <?php if (! empty($achats)) : ?>
+                    <?php foreach ($achats as $a) : ?>
+                        <?php $total += (float) $a['montant_total']; ?>
+                        <tr>
+                            <td><?= esc($a['designation']) ?></td>
+                            <td><?= number_format((float) $a['prix_unitaire'], 0, ',', ' ') ?></td>
+                            <td><?= (int) $a['quantite'] ?></td>
+                            <td><?= number_format((float) $a['montant_total'], 0, ',', ' ') ?></td>
+                        </tr>
+                    <?php endforeach; ?>
+                <?php else : ?>
                     <tr>
-                        <td><?= esc($a['designation']) ?></td>
-                        <td><?= number_format($a['prix_unitaire'], 0, ',', ' ') ?></td>
-                        <td><?= $a['quantite'] ?></td>
-                        <td><?= number_format($a['montant_total'], 0, ',', ' ') ?></td>
+                        <td colspan="4" class="text-center text-muted py-4">
+                            Aucun article saisi pour le moment.
+                        </td>
                     </tr>
-                <?php endforeach; ?>
+                <?php endif; ?>
             </tbody>
             <tfoot>
                 <tr>
                     <td colspan="3" class="text-end fw-bold">Total</td>
-                    <td class="fw-bold"><?= number_format($total, 0, ',', ' ') ?></td>
+                    <td class="fw-bold"><?= number_format((float) $total, 0, ',', ' ') ?></td>
                 </tr>
             </tfoot>
         </table>
 
         <div class="text-end">
-            <a href="<?= base_url('achats/cloturer') ?>"
-               class="btn btn-danger"
-               onclick="return confirm('Clôturer cet achat ?')">
+            <button type="button" class="btn btn-outline-danger" disabled>
                 🔒 Clôturer achat
-            </a>
+            </button>
         </div>
     </div>
 </div>

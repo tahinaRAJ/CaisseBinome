@@ -8,4 +8,5 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('/caisse', 'CaisseController::index');
 $routes->post('/caisse/select', 'CaisseController::select');
-$routes->get('/achat', 'AchatController::index');
+$routes->get('/achats', 'AchatController::index');
+$routes->post('/achats/ajouter', 'AchatController::ajouter');

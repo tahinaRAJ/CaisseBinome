@@ -28,6 +28,16 @@ class AchatModel extends Model
     protected $createdField = 'created_at';
     protected $updatedField = 'updated_at';
 
+    public function getOpenItemsForCaisse(int $caisseId): array
+    {
+        return $this->select('achats.*, produits.designation, produits.prix AS produit_prix')
+            ->join('produits', 'produits.id = achats.produit_id')
+            ->where('caisse_id', $caisseId)
+            ->where('statut', 'en_cours')
+            ->orderBy('achats.created_at', 'ASC')
+            ->findAll();
+    }
+
     public function closeCurrentSession(int $caisseId, ?string $ticket = null): bool
     {
         return (bool) $this->builder()
