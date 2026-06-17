@@ -33,6 +33,6 @@ class CaisseController extends BaseController
 
         session()->set('caisse', $caisse);
 
-        return redirect()->to('/achat');
+        return redirect()->to('/achats');
     }
 }
