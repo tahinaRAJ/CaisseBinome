@@ -137,7 +137,7 @@
                             id="email"
                             name="email"
                             value="<?= esc(old('email') ?? '') ?>"
-                            placeholder="exemple@domaine.com"
+                            placeholder="admin@example.com"
                             required
                         >
                     </div>
@@ -149,7 +149,7 @@
                             class="form-control"
                             id="mdp"
                             name="mdp"
-                            placeholder="Votre mot de passe"
+                            placeholder="admin"
                             required
                         >
                     </div>
