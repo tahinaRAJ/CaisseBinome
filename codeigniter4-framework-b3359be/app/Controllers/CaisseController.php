@@ -1,22 +1,38 @@
-<?php 
+<?php
 
-namespace App\Controllers; // 1. On indique où se trouve ce fichier
+namespace App\Controllers;
 
-use App\Controllers\BaseController; // 2. On importe le BaseController de CodeIgniter 4
+use App\Models\CaisseModel;
 
 class CaisseController extends BaseController
 {
-    public function index()
+    public function index(): string
     {
-        return view('caisse/caisse');
+        $caisseModel = new CaisseModel();
+
+        return view('caisse/caisse', [
+            'caisses' => $caisseModel->getActiveCaisses(),
+            'selectedCaisse' => session()->get('caisse'),
+            'error' => session()->getFlashdata('error'),
+        ]);
     }
 
-    public function search()
+    public function select()
     {
-        $searchTerm = $this->request->getGet('search');
-        $produitModel = new \App\Models\ProduitModel();
-        $produits = $produitModel->like('designation', $searchTerm)->findAll();
+        $numero = $this->request->getPost('caisse_numero');
 
-        return view('caisse', ['produits' => $produits]);
+        if (! is_numeric($numero)) {
+            return redirect()->to('/')->with('error', 'Choisis un numéro de caisse valide.');
+        }
+
+        $caisse = (new CaisseModel())->findActiveByNumero((int) $numero);
+
+        if (! $caisse) {
+            return redirect()->to('/')->with('error', 'Cette caisse n existe pas.');
+        }
+
+        session()->set('caisse', $caisse);
+
+        return redirect()->to('/achat');
     }
 }

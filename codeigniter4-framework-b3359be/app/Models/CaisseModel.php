@@ -18,8 +18,24 @@ class CaisseModel extends Model
         'active',
     ];
 
-    protected bool $useTimestamps = true;
+    protected $useTimestamps = true;
     protected $dateFormat = 'datetime';
     protected $createdField = 'created_at';
     protected $updatedField = 'updated_at';
+
+    public function getActiveCaisses(): array
+    {
+        return $this->where('active', 1)
+            ->orderBy('numero', 'ASC')
+            ->findAll();
+    }
+
+    public function findActiveByNumero(int $numero): ?array
+    {
+        $caisse = $this->where('numero', $numero)
+            ->where('active', 1)
+            ->first();
+
+        return $caisse ?: null;
+    }
 }

@@ -23,8 +23,19 @@ class AchatModel extends Model
         'statut',
     ];
 
-    protected bool $useTimestamps = true;
+    protected $useTimestamps = true;
     protected $dateFormat = 'datetime';
     protected $createdField = 'created_at';
     protected $updatedField = 'updated_at';
+
+    public function closeCurrentSession(int $caisseId, ?string $ticket = null): bool
+    {
+        return (bool) $this->builder()
+            ->where('caisse_id', $caisseId)
+            ->where('statut', 'en_cours')
+            ->update([
+                'statut' => 'cloture',
+                'numero_ticket' => $ticket,
+            ]);
+    }
 }

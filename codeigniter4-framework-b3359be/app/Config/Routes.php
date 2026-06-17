@@ -7,4 +7,5 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('/caisse', 'CaisseController::index');
-$routes->get('/caisse/search', 'CaisseController::search');
+$routes->post('/caisse/select', 'CaisseController::select');
+$routes->get('/achat', 'AchatController::index');

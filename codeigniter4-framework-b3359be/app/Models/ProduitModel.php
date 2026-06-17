@@ -19,8 +19,24 @@ class ProduitModel extends Model
         'description',
     ];
 
-    protected bool $useTimestamps = true;
+    protected $useTimestamps = true;
     protected $dateFormat = 'datetime';
     protected $createdField = 'created_at';
     protected $updatedField = 'updated_at';
+
+    public function getAllProducts(): array
+    {
+        return $this->orderBy('designation', 'ASC')->findAll();
+    }
+
+    public function searchByDesignation(string $term): array
+    {
+        if ($term === '') {
+            return $this->getAllProducts();
+        }
+
+        return $this->like('designation', $term)
+            ->orderBy('designation', 'ASC')
+            ->findAll();
+    }
 }
