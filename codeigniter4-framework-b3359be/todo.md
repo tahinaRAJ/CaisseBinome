@@ -31,7 +31,7 @@
 - [ ] affichage de la caisse active au-dessus du menu après validation
 
 ## Saisie des Achats
-- [ ] création de `AchatController`
+- [x] création de `AchatController`
 - [ ] Etape 1 : formulaire de saisie (dropdown Produit + champ Quantité + bouton Valider)
 - [ ] route GET vers la page de saisie
 - [ ] route POST pour enregistrer un article
