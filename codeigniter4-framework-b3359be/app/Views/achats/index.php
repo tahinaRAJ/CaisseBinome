@@ -60,48 +60,49 @@
 <!-- Tableau récapitulatif -->
 <div class="card">
     <div class="card-body">
-        <table class="table table-bordered">
-            <thead class="table-light">
-                <tr>
-                    <th>Produit</th>
-                    <th>Prix unit.</th>
-                    <th>Qté</th>
-                    <th>Montant</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php $total = 0; ?>
-                <?php if (! empty($achats)) : ?>
-                    <?php foreach ($achats as $a) : ?>
-                        <?php $total += (float) $a['montant_total']; ?>
-                        <tr>
-                            <td><?= esc($a['designation']) ?></td>
-                            <td><?= number_format((float) $a['prix_unitaire'], 0, ',', ' ') ?></td>
-                            <td><?= (int) $a['quantite'] ?></td>
-                            <td><?= number_format((float) $a['montant_total'], 0, ',', ' ') ?></td>
-                        </tr>
-                    <?php endforeach; ?>
-                <?php else : ?>
+        <form action="<?= base_url('achats/cloturer') ?>" method="post">
+            <table class="table table-bordered">
+                <thead class="table-light">
                     <tr>
-                        <td colspan="4" class="text-center text-muted py-4">
-                            Aucun article saisi pour le moment.
-                        </td>
+                        <th>Produit</th>
+                        <th>Prix unit.</th>
+                        <th>Qté</th>
+                        <th>Montant</th>
                     </tr>
-                <?php endif; ?>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="3" class="text-end fw-bold">Total</td>
-                    <td class="fw-bold"><?= number_format((float) $total, 0, ',', ' ') ?></td>
-                </tr>
-            </tfoot>
-        </table>
-
-        <div class="text-end">
-            <button type="button" class="btn btn-outline-danger" disabled>
+                </thead>
+                <tbody>
+                    <?php $total = 0; ?>
+                    <?php if (! empty($achats)) : ?>
+                        <?php foreach ($achats as $a) : ?>
+                            <?php $total += (float) $a['montant_total']; ?>
+                            <tr>
+                                <td><?= esc($a['designation']) ?></td>
+                                <td><?= number_format((float) $a['prix_unitaire'], 0, ',', ' ') ?></td>
+                                <td><?= (int) $a['quantite'] ?></td>
+                                <td><?= number_format((float) $a['montant_total'], 0, ',', ' ') ?></td>
+                            </tr>
+                        <?php endforeach; ?>
+                    <?php else : ?>
+                        <tr>
+                            <td colspan="4" class="text-center text-muted py-4">
+                                Aucun article saisi pour le moment.
+                            </td>
+                        </tr>
+                    <?php endif; ?>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="text-end fw-bold">Total</td>
+                        <td class="fw-bold"><?= number_format((float) $total, 0, ',', ' ') ?></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="text-end">
+            <button type="submit" class="btn btn-outline-danger">
                 🔒 Clôturer achat
             </button>
         </div>
+        </form>
     </div>
 </div>
 

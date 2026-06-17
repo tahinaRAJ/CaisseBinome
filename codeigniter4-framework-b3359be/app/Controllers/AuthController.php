@@ -1,5 +1,7 @@
 <?php
-namespace app\Controllers;
+namespace App\Controllers;
+use App\Models\UserModel;
+use App\Controllers\BaseController;
 
 use App\Models\Employes;
 
@@ -8,7 +10,7 @@ class AuthController extends BaseController
     public function showLoginForm()
     {
         if (session()->get('user')) {
-            return redirect()->to('/dashboard');
+            return redirect()->to('/caisse');
         }
         return view('auth/login');
     }
