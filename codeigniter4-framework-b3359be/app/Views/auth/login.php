@@ -136,8 +136,8 @@
                             class="form-control"
                             id="email"
                             name="email"
-                            value="<?= esc(old('email') ?? '') ?>"
-                            placeholder="admin@example.com"
+                            value="admin@example.com"
+                            placeholder="exemple:admin@example.com"
                             required
                         >
                     </div>
@@ -149,6 +149,7 @@
                             class="form-control"
                             id="mdp"
                             name="mdp"
+                            value="admin"
                             placeholder="admin"
                             required
                         >
