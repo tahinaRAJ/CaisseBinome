@@ -11,12 +11,12 @@ class AuthFilter implements FilterInterface
     public function before(RequestInterface $request, $arguments = null)
     {
         $session = session();
-        // Si pas connecté → redirection login
-        if (!$session->get('user')) {
-            return redirect()->to('/login')->with('erreur', 'Connectez-vous
-pour accéder à cette page');
+
+        if (! $session->get('user')) {
+            return redirect()->to('/login')->with('erreur', 'Connectez-vous pour accéder à cette page.');
         }
     }
+
     public function after(RequestInterface $request, ResponseInterface
     $response, $arguments = null)
     {
