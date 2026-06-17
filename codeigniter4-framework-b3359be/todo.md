@@ -1,18 +1,18 @@
 # SETUP
 - [x] création du projet CodeIgniter
-- [ ] installation de la base SQLite
-- [ ] configuration de l'environnement
+- [x] installation de la base SQLite
+- [x] configuration de l'environnement
 
 # Base de données
-- [ ] création de la base SQLite
-- [ ] création de la table `produit` (désignation, prix, quantité en stock, etc.)
-- [ ] création de la table `caisse`
-- [ ] création de la table `achat`
-- [ ] insertion de 5 produits de test
-- [ ] insertion de 2 caisses de test
+- [x] création de la base SQLite
+- [x] création de la table `produit` (désignation, prix, quantité en stock, etc.)
+- [x] création de la table `caisse`
+- [x] création de la table `achat`
+- [x] insertion de 5 produits de test
+- [x] insertion de 2 caisses de test
 
 # Template
-- [ ] création du template de base à partir du fichier fourni
+- [ ] création du template de base
 - [ ] layout principal avec zone d'affichage de la caisse active au-dessus du menu
 
 # Flow
