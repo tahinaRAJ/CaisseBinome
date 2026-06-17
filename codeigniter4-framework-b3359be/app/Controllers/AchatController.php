@@ -103,4 +103,11 @@ class AchatController extends BaseController
 
         return redirect()->to('/achats')->with('message', 'Produit ajouté à la saisie.');
     }
+        public function cloturer()
+    {
+        $caisse = session()->get('caisse');
+        (new AchatModel())->closeCurrentSession((int) $caisse['id']);
+        session()->remove('achat_ticket');
+        return redirect()->to('/achats')->with('message', 'Achat clôturé.');
+    }
 }

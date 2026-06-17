@@ -10,6 +10,23 @@ class DatabaseSeeder extends Seeder
     {
         $now = date('Y-m-d H:i:s');
 
+        $this->db->table('user')->insertBatch([
+            [
+                'nom'        => 'Admin',
+                'email'      => 'admin@example.com',
+                'mdp'        => password_hash('admin', PASSWORD_DEFAULT),
+                'role'       => 'admin',
+            ],
+            [
+                'nom'        => 'test',
+                'email'      => 'test@example.com',
+                'mdp'        => password_hash('user', PASSWORD_DEFAULT),
+                'role'       => 'user',
+            ],
+        ]);
+        
+
+
         $this->db->table('produits')->insertBatch([
             [
                 'designation'     => 'Riz blanc 5kg',

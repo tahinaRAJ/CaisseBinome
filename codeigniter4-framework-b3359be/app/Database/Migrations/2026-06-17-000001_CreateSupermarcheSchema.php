@@ -15,6 +15,38 @@ class CreateSupermarcheSchema extends Migration
                 'unsigned'       => true,
                 'auto_increment' => true,
             ],
+            'nom' => [
+                'type'       => 'VARCHAR',
+                'constraint' => 100,
+            ],
+            'email' => [
+                'type'       => 'VARCHAR',
+                'constraint' => 50,
+                'null'       => true,
+            ],
+            'mdp' => [
+                'type'       => 'VARCHAR',
+                'constraint' => 20,
+                'null'       => true,
+            ],
+            'role' => [
+                'type'       => 'VARCHAR',
+                'constraint' => 20,
+                'default'    => 'user',
+            ],
+        ]);
+        $this->forge->addKey('id', true);
+        $this->forge->createTable('user', true);
+
+
+
+        $this->forge->addField([
+            'id' => [
+                'type'           => 'INTEGER',
+                'constraint'     => 11,
+                'unsigned'       => true,
+                'auto_increment' => true,
+            ],
             'designation' => [
                 'type'       => 'VARCHAR',
                 'constraint' => 150,
