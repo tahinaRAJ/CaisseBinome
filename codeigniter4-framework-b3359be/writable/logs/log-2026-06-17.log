@@ -509,3 +509,185 @@ in APPPATH/Controllers/CaisseController.php on line 3.
 11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
 13 SYSTEMPATH/rewrite.php(44): require_once('/home/victus/itu/S4/Mr Rojo/CaisseBinome/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-06-17 06:29:52 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "caisse.php"
+[Method: GET, Route: caisse]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CaisseController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/victus/itu/S4/Mr Rojo/CaisseBinome/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-06-17 06:29:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "caisse.php"
+[Method: GET, Route: caisse]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CaisseController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/victus/itu/S4/Mr Rojo/CaisseBinome/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-06-17 06:29:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "caisse.php"
+[Method: GET, Route: caisse]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CaisseController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/victus/itu/S4/Mr Rojo/CaisseBinome/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-06-17 06:29:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "caisse.php"
+[Method: GET, Route: caisse]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CaisseController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/victus/itu/S4/Mr Rojo/CaisseBinome/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-06-17 06:29:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "caisse.php"
+[Method: GET, Route: caisse]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CaisseController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/victus/itu/S4/Mr Rojo/CaisseBinome/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-06-17 06:29:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "caisse.php"
+[Method: GET, Route: caisse]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CaisseController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/victus/itu/S4/Mr Rojo/CaisseBinome/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-06-17 06:29:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "caisse.php"
+[Method: GET, Route: caisse]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CaisseController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/victus/itu/S4/Mr Rojo/CaisseBinome/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-06-17 06:29:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "caisse.php"
+[Method: GET, Route: caisse]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CaisseController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/victus/itu/S4/Mr Rojo/CaisseBinome/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-06-17 06:29:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "caisse.php"
+[Method: GET, Route: caisse]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CaisseController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/victus/itu/S4/Mr Rojo/CaisseBinome/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-06-17 06:29:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "caisse.php"
+[Method: GET, Route: caisse]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CaisseController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/victus/itu/S4/Mr Rojo/CaisseBinome/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-06-17 06:29:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "caisse.php"
+[Method: GET, Route: caisse]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CaisseController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/victus/itu/S4/Mr Rojo/CaisseBinome/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-06-17 06:29:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "caisse.php"
+[Method: GET, Route: caisse]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CaisseController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/victus/itu/S4/Mr Rojo/CaisseBinome/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-06-17 06:29:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "caisse.php"
+[Method: GET, Route: caisse]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CaisseController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/victus/itu/S4/Mr Rojo/CaisseBinome/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-06-17 06:29:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "caisse.php"
+[Method: GET, Route: caisse]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CaisseController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/victus/itu/S4/Mr Rojo/CaisseBinome/codeigniter4-framework-b3359be/public/index.php')
